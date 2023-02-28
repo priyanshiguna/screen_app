@@ -14,7 +14,7 @@ class _FifthFigmaScreenState extends State<FifthFigmaScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(left: 20),
+          padding: const EdgeInsets.only(left: 21),
           child: Column(
             children: [
               Padding(
@@ -124,144 +124,36 @@ class _FifthFigmaScreenState extends State<FifthFigmaScreen> {
                   ],
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.only(right: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     AppContainer(
                       titleText: "Mo",
                       subText: "21",
                       color: Color(0xFFE3E3E3),
                     ),
-                    Container(
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color(0x331E923B),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "We",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: "WorkSans",
-                            ),
-                          ),
-                          SizedBox(height: 5),
-                          Text(
-                            "23",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "WorkSans",
-                            ),
-                          ),
-                        ],
-                      ),
+                    AppContainer(
+                      titleText: "We",
+                      subText: "23",
+                      color: Color(0x331E923B),
                     ),
-                    Container(
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color(0xFFE3E3E3),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "Th",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: "WorkSans",
-                            ),
-                          ),
-                          SizedBox(height: 5),
-                          Text(
-                            "24",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "WorkSans",
-                            ),
-                          ),
-                        ],
-                      ),
+                    AppContainer(
+                      titleText: "Th",
+                      subText: "24",
+                      color: Color(0xFFE3E3E3),
                     ),
-                    Container(
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color(0xFFE3E3E3),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "Mo",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: "WorkSans",
-                            ),
-                          ),
-                          SizedBox(height: 5),
-                          Text(
-                            "28",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "WorkSans",
-                            ),
-                          ),
-                        ],
-                      ),
+                    AppContainer(
+                      titleText: "Mo",
+                      subText: "28",
+                      color: Color(0xFFE3E3E3),
                     ),
-                    Container(
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color(0xFFE3E3E3),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "Tu",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: "WorkSans",
-                            ),
-                          ),
-                          SizedBox(height: 5),
-                          Text(
-                            "29",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "WorkSans",
-                            ),
-                          ),
-                        ],
-                      ),
+                    AppContainer(
+                      titleText: "Tu",
+                      subText: "29",
+                      color: Color(0xFFE3E3E3),
                     ),
                   ],
                 ),
@@ -280,68 +172,32 @@ class _FifthFigmaScreenState extends State<FifthFigmaScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              Container(
+              SizedBox(
                 height: 38,
                 width: 405,
                 child: ListView(
                   physics: const AlwaysScrollableScrollPhysics(),
                   scrollDirection: Axis.horizontal,
-                  children: [
+                  children: const [
                     AppContainer(
-                      titleText: "09:00 AM",
+                      titleText: "09:00 am",
                       color: Color(0xFFCCE3D1),
                       isCircle: false,
                     ),
-                    const SizedBox(width: 15),
+                    SizedBox(width: 15),
                     AppContainer(
-                      titleText: "10:00 AM",
+                      titleText: "10:00 am",
                       isCircle: false,
                     ),
-                    const SizedBox(width: 15),
-                    Container(
-                      height: 38,
-                      width: 98,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(27),
-                        ),
-                        color: Colors.white,
-                        border: Border.all(
-                          color: Color(0x47000000),
-                        ),
-                      ),
-                      child: const Text(
-                        "01:00 pm",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
+                    SizedBox(width: 15),
+                    AppContainer(
+                      titleText: "01:00 pm",
+                      isCircle: false,
                     ),
-                    const SizedBox(width: 15),
-                    Container(
-                      height: 38,
-                      width: 98,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(27),
-                        ),
-                        color: Colors.white,
-                        border: Border.all(
-                          color: Color(0x47000000),
-                        ),
-                      ),
-                      child: const Text(
-                        "06:00 pm",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
+                    SizedBox(width: 15),
+                    AppContainer(
+                      titleText: "06:00 pm",
+                      isCircle: false,
                     ),
                   ],
                 ),
@@ -383,14 +239,14 @@ class _FifthFigmaScreenState extends State<FifthFigmaScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                 children: [
                   Container(
                     height: 25,
                     width: 25,
                     decoration: BoxDecoration(
-                      color: Color(0xFFEDEDED),
+                      color: const Color(0xFFEDEDED),
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),

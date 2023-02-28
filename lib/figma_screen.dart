@@ -25,7 +25,7 @@ class _FigmaScreenState extends State<FigmaScreen> {
         ),
         centerTitle: false,
         titleSpacing: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         leading: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Image.asset("assets/images/Vector.png"),

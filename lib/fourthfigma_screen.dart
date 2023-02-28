@@ -187,7 +187,8 @@ class _FourthFigmaScreenState extends State<FourthFigmaScreen> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
                                 color: Colors.white,
-                                border: Border.all(color: Color(0xffDCD5D5))),
+                                border:
+                                    Border.all(color: const Color(0xffDCD5D5))),
                             child: const Icon(Icons.access_time),
                           ),
                           const SizedBox(width: 10),
@@ -335,270 +336,294 @@ class _FourthFigmaScreenState extends State<FourthFigmaScreen> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 20),
-                      Row(
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.only(bottom: 90),
-                            child: Image(
-                              image: AssetImage("assets/images/person1.png"),
-                              height: 50,
-                              width: 50,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                      SizedBox(height: 20),
+                      SizedBox(
+                        height: 750,
+                        child: TabBarView(
+                          children: [
+                            Container(color: Colors.transparent),
+                            Column(
                               children: [
-                                const Text(
-                                  "Ademola Adedoyin",
-                                  style: TextStyle(
-                                    color: Color(0xff2F2E2E),
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "WorkSans-SemiBold",
-                                  ),
-                                ),
-                                const SizedBox(height: 5),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: const [
-                                    Image(
-                                      image: AssetImage(
-                                          "assets/images/viewrate.png"),
-                                      height: 21.5,
-                                      width: 22,
+                                  children: [
+                                    const Padding(
+                                      padding: EdgeInsets.only(bottom: 90),
+                                      child: Image(
+                                        image: AssetImage(
+                                            "assets/images/person1.png"),
+                                        height: 50,
+                                        width: 50,
+                                      ),
                                     ),
-                                    SizedBox(width: 5),
-                                    Text(
-                                      "4.5",
-                                      style: TextStyle(
-                                        color: Color(0xff494848),
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w600,
-                                        fontFamily: "WorkSans-Medium",
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 15),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          const Text(
+                                            "Ademola Adedoyin",
+                                            style: TextStyle(
+                                              color: Color(0xff2F2E2E),
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                              fontFamily: "WorkSans-SemiBold",
+                                            ),
+                                          ),
+                                          const SizedBox(height: 5),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            children: const [
+                                              Image(
+                                                image: AssetImage(
+                                                    "assets/images/viewrate.png"),
+                                                height: 21.5,
+                                                width: 22,
+                                              ),
+                                              SizedBox(width: 5),
+                                              Text(
+                                                "4.5",
+                                                style: TextStyle(
+                                                  color: Color(0xff494848),
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontFamily: "WorkSans-Medium",
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 5),
+                                          const Text(
+                                            "08-04-2022| 11:30am",
+                                            style: TextStyle(
+                                              color: Color(0xff7B7B7B),
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w600,
+                                              fontFamily: "WorkSans-Regular",
+                                            ),
+                                          ),
+                                          const SizedBox(height: 10),
+                                          const Text(
+                                            "This place is so nice. The decor is a site\nto see and their food is top notch. I really\ncan’t wait to visit this restaurant again!",
+                                            style: TextStyle(
+                                              color: Color(0xff494848),
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w600,
+                                              fontFamily: "WorkSans-Regular",
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ],
                                 ),
-                                const SizedBox(height: 5),
-                                const Text(
-                                  "08-04-2022| 11:30am",
-                                  style: TextStyle(
-                                    color: Color(0xff7B7B7B),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: "WorkSans-Regular",
-                                  ),
+                                const SizedBox(height: 15),
+                                const Divider(
+                                  color: Color(0xffDCD5D5),
+                                  thickness: 2,
                                 ),
-                                const SizedBox(height: 10),
-                                const Text(
-                                  "This place is so nice. The decor is a site\nto see and their food is top notch. I really\ncan’t wait to visit this restaurant again!",
-                                  style: TextStyle(
-                                    color: Color(0xff494848),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: "WorkSans-Regular",
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 15),
-                      const Divider(
-                        color: Color(0xffDCD5D5),
-                        thickness: 2,
-                      ),
-                      const SizedBox(height: 15),
-                      Row(
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.only(bottom: 90),
-                            child: Image(
-                              image: AssetImage("assets/images/2person.png"),
-                              height: 50,
-                              width: 50,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text(
-                                  "Ogunkunle Ayobami",
-                                  style: TextStyle(
-                                    color: Color(0xff2F2E2E),
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "WorkSans-SemiBold",
-                                  ),
-                                ),
-                                const SizedBox(height: 5),
+                                const SizedBox(height: 15),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: const [
-                                    Image(
-                                      image: AssetImage(
-                                          "assets/images/viewrate.png"),
-                                      height: 21.5,
-                                      width: 22,
+                                  children: [
+                                    const Padding(
+                                      padding: EdgeInsets.only(bottom: 90),
+                                      child: Image(
+                                        image: AssetImage(
+                                            "assets/images/2person.png"),
+                                        height: 50,
+                                        width: 50,
+                                      ),
                                     ),
-                                    SizedBox(width: 5),
-                                    Text(
-                                      "4.2",
-                                      style: TextStyle(
-                                        color: Color(0xff494848),
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w600,
-                                        fontFamily: "WorkSans-Medium",
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 15),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          const Text(
+                                            "Ogunkunle Ayobami",
+                                            style: TextStyle(
+                                              color: Color(0xff2F2E2E),
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                              fontFamily: "WorkSans-SemiBold",
+                                            ),
+                                          ),
+                                          const SizedBox(height: 5),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            children: const [
+                                              Image(
+                                                image: AssetImage(
+                                                    "assets/images/viewrate.png"),
+                                                height: 21.5,
+                                                width: 22,
+                                              ),
+                                              SizedBox(width: 5),
+                                              Text(
+                                                "4.2",
+                                                style: TextStyle(
+                                                  color: Color(0xff494848),
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontFamily: "WorkSans-Medium",
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 5),
+                                          const Text(
+                                            "14-03-2022| 05:15pm",
+                                            style: TextStyle(
+                                              color: Color(0xff7B7B7B),
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w600,
+                                              fontFamily: "WorkSans-Regular",
+                                            ),
+                                          ),
+                                          const SizedBox(height: 10),
+                                          const Text(
+                                            "I had doubts at first but on getting there,\nI was really surprised and was not\ndisappointed. Such a beautiful place!",
+                                            style: TextStyle(
+                                              color: Color(0xff494848),
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w600,
+                                              fontFamily: "WorkSans-Regular",
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ],
                                 ),
-                                const SizedBox(height: 5),
-                                const Text(
-                                  "14-03-2022| 05:15pm",
-                                  style: TextStyle(
-                                    color: Color(0xff7B7B7B),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: "WorkSans-Regular",
-                                  ),
+                                const SizedBox(height: 15),
+                                const Divider(
+                                  color: Color(0xffDCD5D5),
+                                  thickness: 2,
                                 ),
-                                const SizedBox(height: 10),
-                                const Text(
-                                  "I had doubts at first but on getting there,\nI was really surprised and was not\ndisappointed. Such a beautiful place!",
-                                  style: TextStyle(
-                                    color: Color(0xff494848),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: "WorkSans-Regular",
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 15),
-                      const Divider(
-                        color: Color(0xffDCD5D5),
-                        thickness: 2,
-                      ),
-                      const SizedBox(height: 15),
-                      Row(
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.only(bottom: 90),
-                            child: Image(
-                              image: AssetImage("assets/images/person3.png"),
-                              height: 50,
-                              width: 50,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text(
-                                  "Amole Toluwanimi",
-                                  style: TextStyle(
-                                    color: Color(0xff2F2E2E),
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "WorkSans-SemiBold",
-                                  ),
-                                ),
-                                const SizedBox(height: 5),
+                                const SizedBox(height: 15),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: const [
-                                    Image(
-                                      image: AssetImage(
-                                          "assets/images/viewrate.png"),
-                                      height: 21.5,
-                                      width: 22,
+                                  children: [
+                                    const Padding(
+                                      padding: EdgeInsets.only(bottom: 90),
+                                      child: Image(
+                                        image: AssetImage(
+                                            "assets/images/person3.png"),
+                                        height: 50,
+                                        width: 50,
+                                      ),
                                     ),
-                                    SizedBox(width: 5),
-                                    Text(
-                                      "4.3",
-                                      style: TextStyle(
-                                        color: Color(0xff494848),
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w600,
-                                        fontFamily: "WorkSans-Medium",
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 15),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          const Text(
+                                            "Amole Toluwanimi",
+                                            style: TextStyle(
+                                              color: Color(0xff2F2E2E),
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                              fontFamily: "WorkSans-SemiBold",
+                                            ),
+                                          ),
+                                          const SizedBox(height: 5),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            children: const [
+                                              Image(
+                                                image: AssetImage(
+                                                    "assets/images/viewrate.png"),
+                                                height: 21.5,
+                                                width: 22,
+                                              ),
+                                              SizedBox(width: 5),
+                                              Text(
+                                                "4.3",
+                                                style: TextStyle(
+                                                  color: Color(0xff494848),
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontFamily: "WorkSans-Medium",
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(height: 5),
+                                          const Text(
+                                            "28-02-2022| 02:30pm",
+                                            style: TextStyle(
+                                              color: Color(0xff7B7B7B),
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w600,
+                                              fontFamily: "WorkSans-Regular",
+                                            ),
+                                          ),
+                                          const SizedBox(height: 10),
+                                          const Text(
+                                            "They sure have good meals here!. I can’t\nwait to go back there. The sharwarma\nwas heavenly.",
+                                            style: TextStyle(
+                                              color: Color(0xff494848),
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w600,
+                                              fontFamily: "WorkSans-Regular",
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ],
                                 ),
-                                const SizedBox(height: 5),
-                                const Text(
-                                  "28-02-2022| 02:30pm",
-                                  style: TextStyle(
-                                    color: Color(0xff7B7B7B),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: "WorkSans-Regular",
+                                const SizedBox(height: 30),
+                                const Align(
+                                  alignment: Alignment.centerRight,
+                                  child: Text(
+                                    "See All Reviews",
+                                    style: TextStyle(
+                                      color: Color(0xffBA4723),
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: "WorkSans-SemiBold",
+                                    ),
                                   ),
                                 ),
-                                const SizedBox(height: 10),
-                                const Text(
-                                  "They sure have good meals here!. I can’t\nwait to go back there. The sharwarma\nwas heavenly.",
-                                  style: TextStyle(
-                                    color: Color(0xff494848),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: "WorkSans-Regular",
+                                const SizedBox(height: 40),
+                                Container(
+                                  height: 50,
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xffBA4723),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: const Align(
+                                    alignment: Alignment.center,
+                                    child: Text(
+                                      "Reserve a Table",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: "WorkSans-SemiBold",
+                                      ),
+                                    ),
                                   ),
                                 ),
+                                const SizedBox(height: 50),
                               ],
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 30),
-                      const Align(
-                        alignment: Alignment.centerRight,
-                        child: Text(
-                          "See All Reviews",
-                          style: TextStyle(
-                            color: Color(0xffBA4723),
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: "WorkSans-SemiBold",
-                          ),
+                          ],
                         ),
                       ),
-                      const SizedBox(height: 40),
-                      Container(
-                        height: 50,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: Color(0xffBA4723),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: const Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            "Reserve a Table",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "WorkSans-SemiBold",
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 50),
                     ],
                   ),
                 ),

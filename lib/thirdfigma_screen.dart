@@ -256,11 +256,11 @@ class _ThirdFigmaScreenState extends State<ThirdFigmaScreen> {
                                   colors: [
                                     Colors.transparent,
                                     Color(0xffD9D9D9),
+                                    Color(0xffD9D9D9),
                                     Colors.transparent,
                                   ],
                                   begin: Alignment.topCenter,
                                   end: Alignment.bottomCenter,
-                                  //stops: [0.2, 0.8, 0.2],
                                 ),
                               ),
                             ),
@@ -277,17 +277,17 @@ class _ThirdFigmaScreenState extends State<ThirdFigmaScreen> {
                             const SizedBox(width: 10),
                             Container(
                               height: 55,
-                              width: 3,
+                              width: 2,
                               decoration: const BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
                                     Colors.transparent,
                                     Color(0xffD9D9D9),
+                                    Color(0xffD9D9D9),
                                     Colors.transparent,
                                   ],
                                   begin: Alignment.topCenter,
                                   end: Alignment.bottomCenter,
-                                  //stops: [0.2, 0.8, 0.2],
                                 ),
                               ),
                             ),
@@ -317,7 +317,6 @@ class _ThirdFigmaScreenState extends State<ThirdFigmaScreen> {
                           child: Column(
                             children: [
                               const TabBar(
-                                // padding: EdgeInsets.all(8),
                                 automaticIndicatorColorAdjustment: true,
                                 indicatorColor: Color(0xffE85E56),
                                 indicatorSize: TabBarIndicatorSize.label,
@@ -343,179 +342,188 @@ class _ThirdFigmaScreenState extends State<ThirdFigmaScreen> {
                                   ),
                                 ],
                               ),
-                              const SizedBox(height: 20),
-                              Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Stack(
-                                        children: const [
-                                          Image(
-                                            image: AssetImage(
-                                                "assets/images/image1.png"),
-                                            height: 80,
-                                            width: 160,
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 55, left: 5),
-                                            child: Image(
-                                              image: AssetImage(
-                                                  "assets/images/1Image.png"),
-                                              height: 18,
-                                              width: 18,
+                              const SizedBox(height: 10),
+                              Expanded(
+                                child: TabBarView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Stack(
+                                              children: [
+                                                const Image(
+                                                  image: AssetImage(
+                                                      "assets/images/image1.png"),
+                                                  height: 80,
+                                                  width: 160,
+                                                ),
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 48, left: 5),
+                                                  child: Row(
+                                                    children: const [
+                                                      Image(
+                                                        image: AssetImage(
+                                                            "assets/images/1Image.png"),
+                                                        height: 18,
+                                                        width: 18,
+                                                      ),
+                                                      SizedBox(width: 10),
+                                                      Text(
+                                                        "ShivFPS\n600k Followers",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 5,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontFamily: "Roboto",
+                                                        ),
+                                                      ),
+                                                      SizedBox(width: 40),
+                                                      Image(
+                                                        image: AssetImage(
+                                                            "assets/images/2Image.png"),
+                                                        height: 30,
+                                                        width: 54,
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
                                             ),
-                                          ),
-                                          SizedBox(width: 15),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 60, left: 30),
-                                            child: Text(
-                                              "ShivFPS\n600k Followers",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 5,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: "Roboto",
-                                              ),
+                                            const Spacer(),
+                                            Stack(
+                                              children: [
+                                                const Image(
+                                                  image: AssetImage(
+                                                      "assets/images/image2.png"),
+                                                  height: 80,
+                                                  width: 160,
+                                                ),
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 55, left: 5),
+                                                  child: Row(
+                                                    children: const [
+                                                      Image(
+                                                        image: AssetImage(
+                                                            "assets/images/3Image.png"),
+                                                        height: 18,
+                                                        width: 18,
+                                                      ),
+                                                      SizedBox(width: 10),
+                                                      Text(
+                                                        "Pimpeando\n600 Followers",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 5,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontFamily: "Roboto",
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
                                             ),
-                                          ),
-                                          SizedBox(width: 50),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 45, left: 105),
-                                            child: Image(
-                                              image: AssetImage(
-                                                  "assets/images/2Image.png"),
-                                              height: 30,
-                                              width: 54,
+                                          ],
+                                        ),
+                                        const SizedBox(height: 10),
+                                        Row(
+                                          children: [
+                                            Stack(
+                                              children: [
+                                                const Image(
+                                                  image: AssetImage(
+                                                      "assets/images/image3.png"),
+                                                  height: 80,
+                                                  width: 160,
+                                                ),
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 55, left: 5),
+                                                  child: Row(
+                                                    children: const [
+                                                      Image(
+                                                        image: AssetImage(
+                                                            "assets/images/4Image.png"),
+                                                        height: 18,
+                                                        width: 18,
+                                                      ),
+                                                      SizedBox(width: 10),
+                                                      Text(
+                                                        "Santakpo\n700 Followers",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 5,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontFamily: "Roboto",
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                )
+                                              ],
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      const Spacer(),
-                                      Stack(
-                                        children: const [
-                                          Image(
-                                            image: AssetImage(
-                                                "assets/images/image2.png"),
-                                            height: 80,
-                                            width: 160,
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 55, left: 5),
-                                            child: Image(
-                                              image: AssetImage(
-                                                  "assets/images/3Image.png"),
-                                              height: 18,
-                                              width: 18,
+                                            const Spacer(),
+                                            Stack(
+                                              children: [
+                                                const Image(
+                                                  image: AssetImage(
+                                                      "assets/images/image4.png"),
+                                                  height: 80,
+                                                  width: 160,
+                                                ),
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 48, left: 5),
+                                                  child: Row(
+                                                    children: const [
+                                                      Image(
+                                                        image: AssetImage(
+                                                            "assets/images/5Image.png"),
+                                                        height: 18,
+                                                        width: 18,
+                                                      ),
+                                                      SizedBox(width: 10),
+                                                      Text(
+                                                        "ShivFPS\n600k Followers",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 5,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontFamily: "Roboto",
+                                                        ),
+                                                      ),
+                                                      SizedBox(width: 40),
+                                                      Image(
+                                                        image: AssetImage(
+                                                            "assets/images/6Image.png"),
+                                                        height: 30,
+                                                        width: 54,
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
                                             ),
-                                          ),
-                                          SizedBox(width: 15),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 60, left: 30),
-                                            child: Text(
-                                              "Pimpeando\n600 Followers",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 5,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: "Roboto",
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: [
-                                      Stack(
-                                        children: const [
-                                          Image(
-                                            image: AssetImage(
-                                                "assets/images/image3.png"),
-                                            height: 80,
-                                            width: 160,
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 55, left: 5),
-                                            child: Image(
-                                              image: AssetImage(
-                                                  "assets/images/4Image.png"),
-                                              height: 18,
-                                              width: 18,
-                                            ),
-                                          ),
-                                          SizedBox(width: 15),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 60, left: 30),
-                                            child: Text(
-                                              "Santakpo\n700 Followers",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 5,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: "Roboto",
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      const Spacer(),
-                                      Stack(
-                                        children: const [
-                                          Image(
-                                            image: AssetImage(
-                                                "assets/images/image4.png"),
-                                            height: 80,
-                                            width: 160,
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 55, left: 5),
-                                            child: Image(
-                                              image: AssetImage(
-                                                  "assets/images/5Image.png"),
-                                              height: 18,
-                                              width: 18,
-                                            ),
-                                          ),
-                                          SizedBox(width: 15),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 60, left: 30),
-                                            child: Text(
-                                              "Elpiolagala\n15k Followers",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 5,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: "Roboto",
-                                              ),
-                                            ),
-                                          ),
-                                          SizedBox(width: 50),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                top: 45, left: 105),
-                                            child: Image(
-                                              image: AssetImage(
-                                                  "assets/images/6Image.png"),
-                                              height: 30,
-                                              width: 54,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ],
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                    Container(color: Colors.transparent),
+                                    Container(color: Colors.transparent),
+                                    Container(color: Colors.transparent),
+                                  ],
+                                ),
                               ),
                             ],
                           ),

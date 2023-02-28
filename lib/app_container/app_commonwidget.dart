@@ -23,13 +23,15 @@ class AppContainer extends StatelessWidget {
       decoration: BoxDecoration(
         shape: isCircle! ? BoxShape.circle : BoxShape.rectangle,
         color: color ?? Colors.transparent,
-        borderRadius: isCircle! ? null : BorderRadius.all(Radius.circular(27)),
-        border: color == null ? Border.all(color: Color(0x47000000)) : null,
+        borderRadius:
+            isCircle! ? null : const BorderRadius.all(Radius.circular(27)),
+        border:
+            color == null ? Border.all(color: const Color(0x47000000)) : null,
       ),
       child: subText == null
           ? Text(
               titleText!,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black,
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
@@ -40,17 +42,17 @@ class AppContainer extends StatelessWidget {
               children: [
                 Text(
                   titleText!,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
                     fontFamily: "WorkSans",
                   ),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 3),
                 Text(
                   subText!,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
