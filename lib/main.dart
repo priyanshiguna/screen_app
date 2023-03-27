@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'figma_screen.dart';
+import 'first_figma_screen.dart';
 
 void main() {
   runApp(const MyApp());
