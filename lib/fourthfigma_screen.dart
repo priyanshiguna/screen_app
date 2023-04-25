@@ -336,7 +336,7 @@ class _FourthFigmaScreenState extends State<FourthFigmaScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       SizedBox(
                         height: 750,
                         child: TabBarView(
